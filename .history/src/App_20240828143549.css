@@ -1,0 +1,108 @@
+/* Checkbox.css */
+
+/* General Styles */
+.checkbox-container {
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 15px 8px 22px;
+  gap: 5px;
+  width: 370px;
+  height: 42px;
+  background: #ffffff;
+}
+
+.checkbox-label {
+  margin: 0 auto;
+  width: 64px;
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #1f2128;
+}
+
+.checkbox-input {
+  display: none; /* Hide the native checkbox */
+}
+
+/* Frame */
+.checkbox-frame {
+  width: 35px;
+  height: 35px;
+  border: 1.5px solid #ffffff;
+  border-radius: 6px;
+}
+
+/* Vector */
+.checkbox-vector {
+  position: absolute;
+  visibility: hidden;
+  border: 1px solid #e3e3e3;
+}
+
+/* Variants */
+.checkbox-container.variant1 { top: 20px; }
+.checkbox-container.variant2 { top: 82px; }
+.checkbox-container.variant3 { top: 144px; }
+.checkbox-container.variant4 { top: 206px; }
+.checkbox-container.variant5 { top: 268px; }
+.checkbox-container.variant6 { top: 330px; }
+.checkbox-container.variant7 { top: 392px; }
+.checkbox-container.variant8 { top: 454px; }
+
+/* State Styles */
+.checkbox-input:checked + .checkbox-label {
+  /* Styles when checked */
+}
+
+.checkbox-input:focus + .checkbox-label {
+  /* Styles when focused */
+}
+
+.checkbox-input:checked + .checkbox-label + .checkbox-frame {
+  background: #2469f6;
+  border: 3px solid #2469f6;
+}
+
+.checkbox-input:checked + .checkbox-label + .checkbox-frame + .checkbox-vector {
+  visibility: visible;
+}
+
+/* Additional styles for different variants */
+.checkbox-container.variant1 .checkbox-frame {
+  border: 1px solid #cdcdcd;
+}
+
+.checkbox-container.variant2 .checkbox-frame {
+  border: 1px solid #bdbdbd;
+}
+
+.checkbox-container.variant3 .checkbox-frame {
+  border: 1px solid #bdbdbd;
+}
+
+.checkbox-container.variant4 .checkbox-frame {
+  border: 1px solid #bdbdbd;
+}
+
+.checkbox-container.variant5 .checkbox-frame {
+  border: 1px solid #bdbdbd;
+}
+
+.checkbox-container.variant6 .checkbox-frame {
+  border: 1px solid #bdbdbd;
+}
+
+.checkbox-container.variant7 .checkbox-frame {
+  border: 1px solid #bdbdbd;
+}
+
+.checkbox-container.variant8 .checkbox-frame {
+  border: 1px solid #bdbdbd;
+}
